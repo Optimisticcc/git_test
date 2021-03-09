@@ -1,0 +1,189 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.page{
+    width: 100%;
+    height: 100%;
+}
+
+.page__container{
+    display:flex;
+    flex-direction:column;
+    margin: 0;
+    min-width: 0;
+    min-height: 100vh;
+}
+
+.nav{
+    text-align: right;
+    width: 100%;
+    padding: 15px;
+    padding-right: 30px;
+}
+
+.nav__list{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content:flex-end;
+}
+
+.nav__item:not(:last-child) {
+    margin-right: 15px;
+}
+
+.nav__item__app{
+    height: 25px;
+    width: 25px;
+    position: relative;
+}
+
+.small_img{
+    height:32px;
+}
+
+.main{
+    margin-top: 30px;
+    flex: 1;
+    text-align: center;
+}
+
+.main__hero{
+    padding-top: 90px;
+}
+
+.main__input{
+    margin-top:30px;
+    position: relative;
+}
+
+.main__form{
+    margin: 0 auto;
+    max-width: 584px;
+}
+
+.form__group{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    align-items:center;
+    height: 44px;
+    width: 100%;
+    border: 1px solid #dfe1e5;
+    border-radius: 24px;
+    padding: 5px 8px 0 16px;
+}
+
+.form__logo--search{
+    height:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -5px;
+    margin-right: 7px;
+}
+.form__logo--search svg {
+    height: 20px;
+    width: 20px;
+    fill: gray;
+}
+
+.form__input{
+    height: 100%;
+    flex: 1;
+}
+.form__input input {
+    border: none;
+    width: 100%;
+    height: 100%;
+    font-size:16px;
+    margin-top: -3px;
+    color: #101010;
+}
+
+.form__input input:focus{
+    outline:none;
+}
+
+.form__logo--mic{
+    height:100%;
+    width:30px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -5px;
+    margin-right: 7px;
+}
+
+.main__submit{
+    margin-top:36px;
+}
+
+.main__submit button{
+    background-image: -webkit-linear-gradient(top,#f5f5f5,#f1f1f1);
+    background-color: #f2f2f2;
+    border: 1px solid #f2f2f2;
+    border-radius: 4px;
+    color: #5F6368;
+    font-family: Arial,sans-serif;
+    font-size: 14px;
+    margin: 11px 4px;
+    padding: 0 16px;
+    line-height: 27px;
+    height: 36px;
+    min-width: 54px;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+}
+
+.main__submit button:hover{
+    box-shadow: 0 1px 1px rgb(0 0 0 / 10%);
+    background-color: #f8f9fa;
+    border: 1px solid #dadce0;
+    color: #202124;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    border-top: 1px solid #e4e4e4;
+    background-color: #f2f2f2;
+}
+.footer div ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+.footer div ul li{
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+a:link, a:visited {
+    text-decoration: none;
+    color: #5f6368;
+    font-size: 14px;
+}
+
+.main__footer{
+    content: 'Viet Nam';
+    position: relative;
+    width:100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #f2f2f2;
+    height: 48px;
+}
+
+.main__footer span{
+    color: #5f6368;
+    line-height: 48px;
+    padding-left: 35px;
+}
